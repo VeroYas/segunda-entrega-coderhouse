@@ -10,13 +10,7 @@ font-family:"Poppins", sans-serif;
 */
 
 .navbar{
-    display: flex;
-    list-style: none;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: 100%;
-    justify-content: space-between;
-    justify-items: center;
+        list-style: none;
 }
 
 
