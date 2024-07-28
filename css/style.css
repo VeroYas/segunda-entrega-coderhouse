@@ -75,6 +75,18 @@ footer{
     background-color: rgb(18, 67, 97);
 }
 
+.estructura div img{
+    width: 50%;
+}
+
+.estructura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+
 .contenedor-cards{
     display: flex;
     width: 100%;
