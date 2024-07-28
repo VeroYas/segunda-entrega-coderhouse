@@ -13,12 +13,25 @@ font-family:"Poppins", sans-serif;
     list-style: none;
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.flex-container .navbar{
+    display: flex;
+    gap: 100px; 
+}
 
 .navbar li a{
     text-decoration: none;
     color:white;
     font-family: "Poppins", sans-serif;
     font-weight: medium;
+    
 }
 
 nav ul li{
