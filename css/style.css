@@ -71,66 +71,71 @@ h5{
     color: white;
 }
 
-footer{
-    background-color: rgb(18, 67, 97);
-}
-
-.contacfoot{
+.contacfooter{
     display: grid;
     width: 100%;
-    height: 15%;
-    margin: 1rem;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(3, 100px);
-    justify-content: space-evenly;
-    align-content: center;
-    row-gap: 10px;
-    column-gap: 20px;
-}
-
-.contacfoot  h5{
-    grid-row-start:2;
-    grid-row-end:3;
-    grid-column-start:1;
-    grid-column-end:1;
+    height: 200px;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(4,50px);
+    background-color: rgb(18, 67, 97);
     align-items: center;
-
+    justify-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
-.contacfoot h4{
-    grid-row-start:1;
-    grid-row-end:2;
-    grid-column-start:4;
-    grid-column-end:5;
+.contacfooter .logo{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    order:1;
+    padding-left: 1.25rem;
+    width: 100px;
+    height: 100px;
 }
 
-.info-1{
-    grid-row-start:1;
-    grid-row-end:2;
-    grid-column-start:1;
-    grid-column-end:1;
+.contacfooter h5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    order:2;
+    padding-left: 1.25rem;
+    text-align: center;
 }
 
-.info-2{
-    grid-row-start:2;
-    grid-row-end:3;
-    grid-column-start:4;
-    grid-column-end:5;
+.contacfooter h4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: center;
+    order:3;
+    padding-left: 1.25rem;
+    text-align: center;
 }
 
-.info-3{
-    grid-row-start:2;
-    grid-row-end:3;
-    grid-column-start:4;
-    grid-column-end:5;
+.contacfooter .info-1{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    order:4;
+    width: 24px;
+    height: 24px; 
 }
 
-.info-4{
-    grid-row-start:2;
-    grid-row-end:3;
-    grid-column-start:4;
-    grid-column-end:5;
+.contacfooter .info-2{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    justify-self: left;
+    order:5;
+    width: 16px;
+    height: 24px; 
 }
+
+.contacfooter .info-3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: right;
+    order:6;
+    width: 24px;
+    height: 24px; 
+}
+
 
 /*.estructura div img{
     width: 50%;
