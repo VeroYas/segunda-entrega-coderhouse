@@ -43,6 +43,15 @@ h1{
     font-weight: bold;
     color:rgb(18, 67, 97);
     font-size: 2 rem;
+    margin-left: 30px;
+}
+
+h2{
+    font-family:"Poppins", sans-serif;
+    font-weight: bold;
+    color:rgb(18, 67, 97);
+    font-size: 2 rem;
+    margin-left: 30px;
 }
 
 .section-principal{
@@ -69,6 +78,127 @@ h5{
     font-family:"Poppins", sans-serif;
     font-weight: normal;
     color: white;
+}
+
+.principal{
+    width: 100%;
+    height: 730px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(../assets/img/portada2.jpg);
+}
+
+.principal p{
+    width: 25rem;
+    margin: 60px;
+}
+
+.contenerdor-cards{
+    display: flex;
+    width: 100%;
+    height: 37.5rem;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card{
+    width: 20rem;
+    height: 25rem;
+    background-color: rgba(230, 246, 252);
+    border-radius: .3125rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(176, 176, 176);
+}
+
+.card .card-img{
+    width: 75%;
+    height: 75%;
+}
+
+.card .card-img img{
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.nosotros{
+    display: grid;
+    width: 100%;
+    height: 800px;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows: repeat(12,50px);
+    align-items: center;
+    justify-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 20px;
+}
+
+.nosotros .mision{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    order:1;
+    justify-self: right;
+}
+
+.nosotros .mision-1{
+    grid-column: 4/6;
+    grid-row: 2/3;
+    order:2;
+}
+
+.nosotros .vision{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    order:3;
+    justify-self: right;
+}
+
+.nosotros .vision-1{
+    grid-column: 4/6;
+    grid-row: 4/7;
+    order:2;
+}
+
+.nosotros .valores{
+    grid-column: 2/3;
+    grid-row: 8/9;
+    order:3;
+    justify-self: right;
+}
+
+.nosotros .valores-1{
+    grid-column: 4/6;
+    grid-row: 7/10;
+    order:2;
+}
+
+.nosotros .objetivos{
+    grid-column: 2/3;
+    grid-row: 11/12;
+    order:4;
+    justify-self: right;
+}
+
+.nosotros .objetivos-1{
+    grid-column: 4/6;
+    grid-row: 10/13;
+    order:2;
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contacfooter{
@@ -135,58 +265,3 @@ h5{
     width: 24px;
     height: 24px; 
 }
-
-
-/*.estructura div img{
-    width: 50%;
-}
-
-.estructura{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px;
-}
-*/
-
-.contenedor-cards{
-    display: flex;
-    width: 100%;
-    height: 37.5rem;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-
-.card{
-    width: 20rem;
-    height: 25rem;
-    background-color: rgba(230, 246, 252);
-    border-radius: .3125rem;
-    padding: 4px;
-    margin: 2px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 5px rgb(176, 176, 176);
-    margin: .3125rem;
-}
-
-.card .card-img{
-    width: 75%;
-    height: 75%;
-    padding: 8px;
-}
-
-.card .card-img img{
-    width: 85%;
-    height: 85%;
-    object-fit: contain;
-}
-
-    h2{
-    font-family:"Poppins", sans-serif;
-    font-weight: medium;
-    color: rgb(18, 67, 97);
-    font-size: 0.5 rem;
-    }
-
