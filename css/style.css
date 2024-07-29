@@ -87,6 +87,7 @@ h5{
     justify-content: left;
     align-items: center;
     background-image: url(../assets/img/portada2.jpg);
+    width: 100%;
 }
 
 .principal p{
@@ -266,4 +267,186 @@ h5{
     height: 24px; 
 }
 
+@media (max-width:1024px){
 
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-container div a img{
+        width: 75%;
+    }
+
+    .flex-container .navbar{
+        display: flex;
+        gap: 15px; 
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .navbar li a{
+        text-decoration: none;
+        color:white;
+        font-family: "Poppins", sans-serif;
+        font-weight: medium;
+        font-size: 10pt;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenerdor-cards{
+        display: flex;
+        width: 100%;
+        height: 37.5rem;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contacfooter{
+        display: grid;
+        width: 100%;
+        height: 200px;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(4,50px);
+        background-color: rgb(18, 67, 97);
+        align-items: center;
+        justify-items: center;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+}
+
+
+@media (max-width:768px){
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-container div a img{
+        width: 50%;
+    }
+
+    .flex-container .navbar{
+        display: flex;
+        gap: 10px; 
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar li a{
+        text-decoration: none;
+        color:white;
+        font-family: "Poppins", sans-serif;
+        font-weight: medium;
+        font-size: 8pt;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:360px){
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-container div a img{
+        width: 25%;
+    }
+
+    .flex-container .navbar{
+        display: flex;
+        gap: 8px; 
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar li a{
+        text-decoration: none;
+        color:white;
+        font-family: "Poppins", sans-serif;
+        font-weight: medium;
+        font-size: 6pt;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros{
+        display: grid;
+
+        grid-template-columns:(2,100px);
+        grid-template-rows: (12,30px);
+        align-items: center;
+        justify-items: center;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+
+    h2{
+        font-size: medium;
+        font-weight: medium;
+    }
+    
+    p{
+        font-size: 12px;
+        font-weight: regular;
+
+    }
+    .nosotros .mision{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: left;
+    }
+    
+    .nosotros .mision-1{
+        grid-column: 1/6;
+        grid-row: 2/4
+    }
+    
+    .nosotros .vision{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        justify-self: left;
+    }
+    
+    .nosotros .vision-1{
+        grid-column: 1/6;
+        grid-row: 5/7;
+    }
+    
+    .nosotros .valores{
+        grid-column: 1/2;
+        grid-row: 7/8;
+        order:3;
+        justify-self: left;
+    }
+    
+    .nosotros .valores-1{
+        grid-column: 1/6;
+        grid-row: 8/10;
+    }
+    
+    .nosotros .objetivos{
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+
+    .nosotros .objetivos-1{
+        grid-column: 1/6;
+        grid-row: 11/13;
+    }
+}
