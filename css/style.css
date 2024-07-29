@@ -38,6 +38,12 @@ nav ul li{
     display: inline;
 }
 
+.navbar li a:hover,
+        .navbar li a:focus {
+            color: #f0ad4e; /* Cambiar a color deseado al pasar el ratón o enfocar */
+        }
+
+
 h1{
     font-family:"Poppins", sans-serif;
     font-weight: bold;
@@ -448,5 +454,9 @@ h5{
     .nosotros .objetivos-1{
         grid-column: 1/6;
         grid-row: 11/13;
+    }
+
+    footer{
+        transform: scale(1.05);
     }
 }
